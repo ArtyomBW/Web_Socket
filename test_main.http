@@ -1,0 +1,11 @@
+# Test your FastAPI endpoints
+
+GET http://127.0.0.1:8000/      # So'rov yuborish local dan
+Accept: application/json        # Json formatda javob kutilyapti
+
+###
+
+GET http://127.0.0.1:8000/hello/User        # Url ga so'rov yuborish
+Accept: application/json                    # Json formatda jvob kutilyapti
+
+###
