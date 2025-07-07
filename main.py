@@ -147,3 +147,4 @@ async def websocket_endpoint(websocket: WebSocket, client_id: int):
         await manager.broadcast(disconnect_message)
 
 # terminal run kode [  fastapi run main.py ]
+# Cod uchun noutni IP adresi bilan kiriladi
