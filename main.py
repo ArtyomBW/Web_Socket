@@ -1,4 +1,5 @@
 import json
+
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.responses import HTMLResponse
 
@@ -101,8 +102,6 @@ manager = ConnectionManager()
 async def get():
     return HTMLResponse(html)
 
-
-
 @app.websocket("/ws/{client_id}")
 async def websocket_endpoint(websocket: WebSocket, client_id: int):
     await manager.connect(websocket) # websocket ulanishini qabul qilish
@@ -147,3 +146,4 @@ async def websocket_endpoint(websocket: WebSocket, client_id: int):
         })
         await manager.broadcast(disconnect_message)
 
+# terminal run kode [  fastapi run main.py ]
